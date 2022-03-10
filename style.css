@@ -41,13 +41,25 @@ html{
     width: 350px;
     position: fixed;
     bottom: 100px;
-    left: 20px;
+    left: -400px;
     z-index: 1000;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
     padding: 30px;
+}
+.pop_up-box.active{
+    left: 20px;
+}
+.pop_up-box img{
+    height: 110px;
+    animation: image 10s linear infinite;
+}
+@keyframes image{
+    0%{
+        transform: rotate(360deg);
+    }
 }
 .pop_up-box h3{
     color: #333;
